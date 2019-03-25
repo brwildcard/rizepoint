@@ -1,0 +1,83 @@
+.sidebar-nav {
+    width: 17.8em;
+    background: #401d5e;
+    margin: 0 auto;
+    display: grid;
+
+    a {
+        color: #f4f2f6;
+    }
+
+    header {
+        background: #5c3b77;
+        margin-bottom: 0.1em;
+
+        img {
+            width: 80%;
+            height: auto;
+            margin-left: 2em;
+            padding: 0.5em 0;
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            list-style-type: none;
+            margin: 0; 
+            padding: 0;
+
+            li {
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                    width: 30%;
+                    height: auto;
+                }
+
+                .nav-icon {
+                    margin-left: 1.5em;
+                    grid-column: 1;
+                }
+
+                a {
+                    grid-column: 2;
+                }
+            }
+        }
+
+        .nav-parent {
+            padding: 1.1em 0;
+            background: #5c3b77;
+            margin-bottom: 0.1em;
+            display: grid;
+            grid-template-columns: 4.45em 13.35em;
+            background-image: url("/assets/images/down-arrow.png");
+            background-repeat: no-repeat;
+            background-position: right 1.5em center;
+            background-size: 6%;
+        }
+
+        .nav-parent.nav-active {
+            font-weight: bold;
+            background: #401d5e;
+            background-image: url("/assets/images/up-arrow.png");
+            background-repeat: no-repeat;
+            background-position: right 1.5em center;
+            background-size: 6%;
+        }
+
+        .nav-child {
+            padding: 1em 0;
+            display: none;
+        }
+
+        .nav-child.nav-active {
+            display: grid;
+            grid-template-columns: 4.45em 13.35em;
+        }
+    }
+}

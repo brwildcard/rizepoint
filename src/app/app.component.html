@@ -1,0 +1,57 @@
+<section class="sidebar-nav">
+  <header>
+    <img src="assets/images/logo.png">
+  </header>
+  <nav>
+    <ul>
+      <li id="define-menu" >
+        <div class="nav-parent" (click)="submenuToggle('define')" [ngClass]="this.navToggles['defineActive'] ? 'nav-active' : ''">
+          <img class="nav-icon" src="assets/images/define.png">
+          <a routerLink="#">Define</a>
+        </div>
+        <ul>
+          <li class="nav-child" [ngClass]="this.navToggles['defineActive'] ? 'nav-active' : ''"><a routerLink="#">TBD</a></li>
+        </ul>
+      </li>
+      <li id="gather-menu">
+        <div class="nav-parent" (click)="submenuToggle('gather')" [ngClass]="this.navToggles['gatherActive'] ? 'nav-active' : ''">
+          <img class="nav-icon" src="assets/images/gather.png">
+          <a routerLink="#">Gather</a>
+        </div>
+        <ul>
+          <li class="nav-child" [ngClass]="this.navToggles['gatherActive'] ? 'nav-active' : ''"><a routerLink="/gather/forms">Forms</a></li>
+          <li class="nav-child" [ngClass]="this.navToggles['gatherActive'] ? 'nav-active' : ''"><a routerLink="/gather/audit-results">Audit Results</a></li>
+          <li class="nav-child" [ngClass]="this.navToggles['gatherActive'] ? 'nav-active' : ''"><a routerLink="/gather/legacy-forms">Legacy Forms</a></li>
+          <li class="nav-child" [ngClass]="this.navToggles['gatherActive'] ? 'nav-active' : ''"><a routerLink="/gather/print-blank-form">Print Blank Form</a></li>
+        </ul>
+      </li>
+      <li id="see-menu">
+        <div class="nav-parent" (click)="submenuToggle('see')" [ngClass]="this.navToggles['seeActive'] ? 'nav-active' : ''">
+          <img class="nav-icon" src="assets/images/see.png">
+          <a routerLink="#">See</a>
+        </div>
+        <ul>
+          <li class="nav-child" [ngClass]="this.navToggles['seeActive'] ? 'nav-active' : ''"><a routerLink="#">TBD</a></li>
+        </ul>
+      </li>
+      <li id="act-menu">
+        <div class="nav-parent" (click)="submenuToggle('act')" [ngClass]="this.navToggles['actActive'] ? 'nav-active' : ''">
+          <img class="nav-icon" src="assets/images/act.png">
+          <a routerLink="#">Act</a>
+        </div>
+        <ul>
+          <li class="nav-child" [ngClass]="this.navToggles['actActive'] ? 'nav-active' : ''"><a routerLink="#">TBD</a></li>
+        </ul>
+      </li>
+      <li id="admin-menu">
+        <div class="nav-parent" (click)="submenuToggle('admin')" [ngClass]="this.navToggles['adminActive'] ? 'nav-active' : ''">
+          <img class="nav-icon" src="assets/images/admin.png">
+          <a routerLink="#">Admin</a>
+        </div>
+        <ul>
+          <li class="nav-child" [ngClass]="this.navToggles['adminActive'] ? 'nav-active' : ''"><a routerLink="#">TBD</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</section>
